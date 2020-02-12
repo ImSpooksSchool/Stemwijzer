@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <title>Stemwijzr</title>
 
-    <script src="data.js"></script>
-    <script src="utils.js"></script>
-    <script src="script.js"></script>
+    <link href="style/style.css" rel="stylesheet">
+
+    <script src="script/data.js"></script>
+    <script src="script/utils.js"></script>
+    <script src="script/script.js"></script>
 </head>
 <body onload="onLoad()">
 <div id="container">
+    <div id="intro">
+        <div id="stemwijzer-info">
+            <img id="logo-stemwijzer" src="img/logo-stemwijzer.svg" alt="logo-stemwijzer">
+            <div>
+                <p>StemWijzer Tweede Kamer 2017</p>
+
+                <p style="color: deepskyblue">Test uw politieke voorkeur aan de hand van 30 stellingen</p>
+
+                <div>
+                    <div class="description" id="xsable">
+                        Bekijk de toegankelijke versie voor mensen met een visuele beperking
+                    </div>
+
+                    <div class="description" id="privacy">
+                        De StemWijzer maakt geen gebruik van cookies. Klik hier voor de volledige privacy statement
+                    </div>
+
+                </div>
+                <div id="start">
+                    <button onclick="start()">Start</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="parties">
+            <img id="logo-1v" src="img/logo-1v.svg" alt="logo-1v">
+            <div>
+<!--            TODO-->
+            </div>
+        </div>
+    </div>
+
+    <div id="statements" style="display: none">
+    </div>
 
 </div>
 </body>
